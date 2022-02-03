@@ -1,0 +1,45 @@
+{% load static %}
+{% for message in messages %}
+<script> 
+      alert('{{message}}')
+    </script>
+{% endfor %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'main.css/register.css' %}">
+</head>
+
+<body>
+  <main>
+    <form action="login" method="POST">
+    {% csrf_token %}
+    <div class="container">
+      <div class="box">
+          <div class="well">
+          <label>Wellcome to the Login page</label>
+        </div>
+          <div class="label">
+          <label >Please login</label>
+        </div>
+    <div class="form-sigin">
+      <input type="username" name="username" placeholder="Enter your username"><br>
+     </div>
+    <div class="form-sigin">
+      <input type="password" name="password" placeholder="Enter your password"><br>
+     </div>
+    <div class="submit">
+      <input type="submit"><br>
+    </div>
+  </form>
+</div>  
+</div>
+</main>
+
+</body>
+</html>
+<h3><a href="password_reset" name="password_reset"> reset password </a></h3></

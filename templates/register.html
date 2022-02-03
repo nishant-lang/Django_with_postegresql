@@ -1,0 +1,86 @@
+{% load static %}
+{% for message in messages %}
+<script> 
+      alert('{{message}}')
+    </script>
+{% endfor %}
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+
+        <link rel="stylesheet" href="{% static  'main.css/register.css' %}">
+
+      </head>
+      
+      <body>
+        <main>
+          <form action="register" method="POST">
+            {% csrf_token %}
+          <div class="container">
+            <div class="box">
+                <div class="well my-4 ">
+                <label>Wellcome to the Register page</label>
+              </div>
+              
+          <div class="form-sigin">
+            <input type="text" name="first_name" placeholder="Enter the first name"><br>
+           </div>
+          <div class="form-sigin">
+            <input type="text" name="last_name" placeholder="Enter the last name"><br>
+            
+           </div>
+          <div class="form-sigin">
+            <input type="text" name="username" placeholder="Username"><br>
+            
+           </div>
+          <div class="form-sigin">
+            <input type="password" name="password1" placeholder="Password"><br>
+           </div>
+          <div class="form-sigin">
+            <input type="password" name="password2" placeholder="Confirm password"><br>
+           </div>
+          <div class="form-sigin">
+            <input type="email" name="email" placeholder="email"><br>
+           </div>
+          <div class="submit">
+            <input class="btn btn-danger" type="Submit"><br>
+          </div>
+        </form>
+      </div>  
+      </div>
+      </main>
+      
+      </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+   
+      
+   
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+.container {
+    background-color:gray;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.form-sigin input {
+    padding:0 7px;
+    width: 25vw;
+    height: 3vh;
+    border: 1px solid rgb(61, 61, 235);
+    border-radius: 4px;
+    margin: 1px;
+    
+}
+
+.submit  {
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    
+    } 
+
+.submit input{
+    color: white;
+    background-color:rgba(11, 26, 231, 0.87);
+    height: 50px;
+    width: 100px;
+    }
+
+.label {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    }
+    
+.well {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: xx-large;
+    
+    }
+    
